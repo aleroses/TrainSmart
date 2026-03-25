@@ -1,13 +1,66 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: "DM Sans";
+  src: url("../assets/fonts/DMSans-VariableFont.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "DM Sans";
+  src: url("../assets/fonts/DMSans-Italic-VariableFont.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../assets/fonts/Montserrat-VariableFont.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../assets/fonts/Montserrat-Italic-VariableFont.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+
 @theme {
-  --gray-20: "#f8f4eb";
-  --gray-50: "#efe6e6";
-  --gray-100: "#dfcccc";
-  --gray-500: "#5e0000";
-  --primary-100: "#ffe1e0";
-  --primary-300: "#ffa6a3";
-  --primary-500: "ff6b66";
-  --secondary-400: "#ffcd58";
-  --secondary-500: "#ffc132";
+  --color-gray-20: #f8f4eb;
+  --color-gray-50: #efe6e6;
+  --color-gray-100: #dfcccc;
+  --color-gray-500: #5e0000;
+
+  --color-primary-100: #ffe1e0;
+  --color-primary-300: #ffa6a3;
+  --color-primary-500: #ff6b66;
+
+  --color-secondary-400: #ffcd58;
+  --color-secondary-500: #ffc132;
+
+  --background-image-gradiente-yellow-red: linear-gradient(
+    90deg,
+    #ff616a 0%,
+    #ffc132 100%
+  );
+  --background-image-mobile-home: url("./assets/imgs/HomePageGraphic.png");
+
+  --font-dmsans: "DM Sans", sans-serif;
+  --font-montserrat: "Montserrat", sans-serif;
+
+  --content-evolvetext: url("./assets/imgs/EvelveText.png");
+  --content-abstractwaves: url("./assets/imgs/Abstractwaves.png");
+  --content-sparkles: url("./assets/imgs/Sparkles.png");
+  --content-circles: url("./assets/imgs/Circles.png");
+
+  --breakpoint-xs: 30rem;
+  --breakpoint-sm: 48rem;
+  --breakpoint-md: 1060rem;
 }
