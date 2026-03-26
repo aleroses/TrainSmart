@@ -1,13 +1,25 @@
+import { useState } from "react";
+import Navbar from "@/scenes/navbar";
+import { SelectedPage } from "@/shared/types";
+
+// type SelectedPage = (typeof SelectedPage)[keyof typeof SelectedPage];
 
 function App() {
-  return <div className="app text-red-400">
-    <h1 className="font-dmsans">
-    App
+  const [selectedPage, setSelectedPage] = useState<SelectedPage>(
+    SelectedPage.Home,
+  );
 
-    </h1>
+  return (
+    <div className="app">
+      <h1 className="font-dmsans bg-gray-20">
+        <Navbar selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
+      </h1>
 
-    <h2 className="font-montserrat">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque quos pariatur, perferendis quisquam explicabo beatae, ducimus accusantium dicta aspernatur sed ut, sunt aliquam iste? Officia reprehenderit asperiores obcaecati autem voluptate.</h2>
-    </div>;
+      {/* <h2 className="font-montserrat">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+      </h2> */}
+    </div>
+  );
 }
 
 export default App;

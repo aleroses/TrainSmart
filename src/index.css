@@ -26,7 +26,8 @@
 
 @font-face {
   font-family: "Montserrat";
-  src: url("../assets/fonts/Montserrat-Italic-VariableFont.woff2") format("woff2");
+  src: url("../assets/fonts/Montserrat-Italic-VariableFont.woff2")
+    format("woff2");
   font-weight: 100 900;
   font-style: italic;
   font-display: swap;
@@ -63,4 +64,22 @@
   --breakpoint-xs: 30rem;
   --breakpoint-sm: 48rem;
   --breakpoint-md: 1060rem;
+}
+
+/* html,
+body,
+#root,
+.app {
+} */
+
+@layer base {
+  html,
+  body,
+  #root,
+  .app {
+    @apply text-gray-500;
+    height: 100%;
+    width: 100%;
+    font-family: "DM Sans", sand-serif;
+  }
 }
